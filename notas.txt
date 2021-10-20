@@ -1,0 +1,30 @@
+Documento JSON
+//Cliente
+{
+    RFC:String,
+    nombre:String,
+    cel:Number,
+    descripcion_obra: String,
+    costo_base:Number
+}
+//Empleado
+{
+        RFC:String,
+        nombre:String,
+        cel:Number,
+        actividad: String,
+        descripcion_obra: String,
+        pago_estimado:Number
+}
+Rutas
+GET         /                       Probando API- Ok
+Rutas Cliente
+GET         /api/cliente                        Mostrar lista de clientes y sus empleados
+POST        /api/cliente                        Crear un nuevo cliente
+GET         /api/cliente/{descripcion_obra}     Obtener por descripcion_obra del cliente con sus empleados
+DELETE      /api/cliente/{RFC}                  Borrar por el RFC del cliente
+Rutas empleado
+GET         /api/empleado                       Mostrar lista de empleados
+POST        /api/empleado                       Crear un nuevo empleado
+GET         /api/empleado/{RFC}                 Obtener por el RFC del empleado
+DELETE      /api/empleado/{RFC}                 Borrar por el RFC del empleado
